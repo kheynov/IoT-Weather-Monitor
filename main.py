@@ -30,10 +30,8 @@ try:
         print(json.dumps(data))
         time.sleep(1)
         ws.send(json.dumps(data))
-        # print("Humidity: " + str(humidity) + " | Temperature: " + str(temperature) + "\n")
 except:
     print("Error occured")
 finally:
     ws.close()
     print("Exiting...")
-# ws = create_connection(server_url)
